@@ -36,9 +36,6 @@
 .navbar .navbar-toggler .fa-bars{
     color: #6255A5;
 }
-@media (max-width: 1200px) {
-    
-}
 
 /* Jumbotron */
 .jumbotron{
@@ -56,7 +53,7 @@
 .jumbotron .container{
 
 }
-@media (max-width: 1200px) { 
+@media screen and (max-width: 1200px) { 
     .jumbotron .container .cont{
         text-align: center;
         margin-left: 70px;
@@ -119,7 +116,7 @@
 .about .container img{
     position: absolute;
 }
-@media (max-width: 1200px){
+@media screen and (max-width: 1200px){
     .about .container .img-about{
         width: 470px;
         height: 320px;
