@@ -36,9 +36,7 @@
 .navbar .navbar-toggler .fa-bars{
     color: #6255A5;
 }
-@media (max-width: 1200px) {
-    
-}
+
 
 /* Jumbotron */
 .jumbotron{
@@ -56,7 +54,7 @@
 .jumbotron .container{
 
 }
-@media (max-width: 1200px) { 
+@media screen and (max-width: 1200px) { 
     .jumbotron .container .cont{
         text-align: center;
         margin-left: 70px;
@@ -66,9 +64,11 @@
     font-family: 'Amaranth', sans-serif;
     color: #413960;
     width: 700;
+    font-size: 50px;
 }
 .jumbotron .container p{
     color: #7D7791;
+    font-size: 18px;
 }
 
 /* Carousel */
@@ -98,10 +98,14 @@
     font-family: 'Inter', sans-serif;
 }
 .about .container .text-about{
+    font-size: 16px;
+    font-weight: 500;
     color: #6255A5;
 }
 .about .container .text-what{
     font-family: 'Amaranth', sans-serif;
+    font-size: 36px;
+    font-weight: 400;
     color: #413960;
 }
 .about .container img:hover{
@@ -111,15 +115,14 @@
     filter: grayscale(30%);
 }
 .about .container .img-about{
-    position: absolute;
     width: 540px;
     height: 366px;
 }
 
 .about .container img{
-    position: absolute;
+    position: relative;
 }
-@media (max-width: 1200px){
+@media screen and (max-width: 1200px){
     .about .container .img-about{
         width: 470px;
         height: 320px;
@@ -129,10 +132,20 @@
     }
 }
 .about .container .poly{
-    margin: 170px 0 0 250px;
+    position: absolute;
+    margin: 127px 0 0 208px;
+    width: 30px;
+    height: 35px;
+    left: 45px;
+    top: 20px;
 }
 .about .container .ellipse{
-    margin: 150px 0 0 220px;
+    position: absolute;
+    margin: 124px 0 0 210px;
+    width: 80px;
+    height: 80px;
+    left: 15px;
+    top: 2px;
 }
 .about .container .caption h3{
     color: #413960;
@@ -142,5 +155,93 @@
     color: #7D7791;
     font-weight: 400;
 }
-
+@media (min-width:1200px){
+    .about .container .poly{
+        position: absolute;
+        margin: 127px 0 0 208px;
+        width: 30px;
+        height: 35px;
+        left: 65px;
+        top: 50px;
+    }
+    .about .container .ellipse{
+        position: absolute;
+        margin: 124px 0 0 210px;
+        width: 80px;
+        height: 80px;
+        left: 35px;
+        top: 30px;
+    }
+}
 /* Catalog */
+.catalog .container .text-ctg{
+    font-size: 16px;
+    font-weight: 500;
+    color: #6255A5;
+}
+.catalog .container .text-ls{
+    font-size: 36px;
+    font-weight: 400;
+    font-family: 'Amaranth', sans-serif;
+    color: #413960;
+}
+.catalog .container .nav .nav-link{
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21.78px;
+    color: #AAAAAA;
+    display: block;
+    border-bottom: rgba(222, 222, 222, 0.8) 2px solid;
+    width: 99%;
+}
+.catalog .container .nav .nav-link:hover{
+    color: #dddddd;
+    border-bottom: #dddddd 2px solid;
+}
+.catalog .container .nav .nav-item .active{
+    text-decoration: none;
+    font-weight: bolder;
+    cursor: default;
+    font-size: 18px;
+    line-height: 21.78px;
+    color: #413960;
+    display: block;
+    border-bottom: #413960 3px solid;
+    width: 99%;
+}
+@media(max-width:1200px){
+    .catalog .container .nav .nav-link{
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21.78px;
+        color: #AAAAAA;
+        border-bottom: none;
+    }
+    .catalog .container .nav .nav-item .active{
+        border-bottom: none;
+    }
+}
+
+/* Book */
+.book .card .card-body h4{
+    font-size: 20px;
+    font-weight: 600;
+}
+.book .card .card-body h6{
+    font-size: 12px;
+    font-weight: 500;
+}
+.book .card{
+    border: none;
+}
+.book .card:hover{
+    background: #ffffff;
+    padding: 10px;
+    box-shadow: 7px 35px 60px rgba(51, 51, 51, 0.08)
+}
+.book .card .card-body .star{
+    width: 108px;
+    height: 18px;
+}
