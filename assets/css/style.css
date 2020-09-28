@@ -36,11 +36,6 @@
 .navbar .navbar-toggler .fa-bars{
     color: #6255A5;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> d6450c7dcf28dbc334c8b3ae73d5e246b95d74c9
-
 /* Jumbotron */
 .jumbotron{
     font-family: 'Inter', sans-serif;
@@ -158,10 +153,10 @@
     color: #7D7791;
     font-weight: 400;
 }
-@media (min-width:1200px){
+@media (max-width:1200px){
     .about .container .poly{
         position: absolute;
-        margin: 127px 0 0 208px;
+        margin: 127px 0 0 195px;
         width: 30px;
         height: 35px;
         left: 65px;
@@ -169,7 +164,7 @@
     }
     .about .container .ellipse{
         position: absolute;
-        margin: 124px 0 0 210px;
+        margin: 124px 0 0 198px;
         width: 80px;
         height: 80px;
         left: 35px;
